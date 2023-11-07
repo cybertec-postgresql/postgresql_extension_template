@@ -1,0 +1,9 @@
+# Compilation artifacts
+.deps/
+*.bc
+*.o
+*.so
+
+# Regression Tests Output
+results/
+regression.*

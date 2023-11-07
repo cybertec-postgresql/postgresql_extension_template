@@ -1,0 +1,5 @@
+# postgresql_extension_template extension
+comment = 'Briefly describe your extension here'
+default_version = '1.0'
+module_pathname = '$libdir/postgresql_extension_template'
+relocatable = true

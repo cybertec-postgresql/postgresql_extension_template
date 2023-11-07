@@ -1,0 +1,7 @@
+CREATE EXTENSION postgresql_extension_template;
+SELECT my_function();
+        my_function        
+---------------------------
+ Hello from my_function()!
+(1 row)
+
