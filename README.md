@@ -9,7 +9,9 @@ includes:
   server major versions.
 * Proper license file that you do not have to worry about.
 * ~10 lines boilerplate C code.
+* Preprocessor magic to abort compilation against unsupported server versions.
 * Regression tests.
+* `.gitignore` compilation and regression test artifacts.
 * `Makefile` for `PGXS`.
 
 # USAGE
