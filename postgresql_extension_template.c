@@ -4,7 +4,7 @@
 PG_MODULE_MAGIC;
 
 /* Abost compilation against unsupported versions. */
-#if PG_VERSION_NUM < 120000
+#if PG_VERSION_NUM < 130000
 #error "Unsupported PostgreSQL Version"
 #endif
 
