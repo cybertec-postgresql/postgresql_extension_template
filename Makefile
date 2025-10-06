@@ -1,5 +1,3 @@
-PG_CONFIG ?= pg_config
-
 EXTENSION = postgresql_extension_template
 MODULE_big = postgresql_extension_template
 OBJS = postgresql_extension_template.o
@@ -12,14 +10,6 @@ REGRESS = postgresql_extension_template
 # And uncomment the following line:
 #DOCS = extension_name.md
 
-USE_PGXS = 1
-ifdef USE_PGXS
-	PGXS := $(shell $(PG_CONFIG) --pgxs)
-	include $(PGXS)
-else
-	subdir = contrib/pg_show_plans
-	top_builddir = ../..
-	include $(top_builddir)/src/Makefile.global
-	include $(top_srcdir)/contrib/contrib-global.mk
-endif
-
+PG_CONFIG = pg_config
+PGXS := $(shell $(PG_CONFIG) --pgxs)
+include $(PGXS)
