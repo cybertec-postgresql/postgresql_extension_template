@@ -1,9 +1,11 @@
+/* Must be first. */
 #include "postgres.h"
+
 #include "fmgr.h"
 
 PG_MODULE_MAGIC;
 
-/* Abost compilation against unsupported versions. */
+/* Abort compilation against unsupported versions. */
 #if PG_VERSION_NUM < 140000
 #error "Unsupported PostgreSQL Version"
 #endif
